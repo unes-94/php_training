@@ -2,7 +2,7 @@
 <?php include "conexion.php"; ?>
 <?php
                 if(isset($_POST['Add_film'])){
-                    $ID_film = $_POST['ID_film'];
+                    // $ID_film = $_POST['ID_film'];
                     $Titre = $_POST['Titre'];
                     $Annee = $_POST['Annee'];
                     $Realisateur = $_POST['Nom_Realisateur'];
@@ -11,12 +11,12 @@
                     try {
                         //code...
                         
-                        move_uploaded_file($post_image_temp, "img/$post_image");
+                        // move_uploaded_file($post_image_temp, "img/$post_image");
 
-                        $requete="INSERT INTO film(ID_film,Titre,Annee,Nom_Realisateur,Film_img) VALUES  ";
+                        $requete="INSERT INTO film(Titre,Annee,Nom_Realisateur,Film_img) VALUES  ('{$Titre}','{$Annee}','{$Realisateur}','{$post_image}') ";
                         $data_send=mysqli_query($connection, $requete);
                     } catch (Exception $e) {
-                        echo "erreur" , $e->getMessage();
+                        echo $e->getMessage();
                     }
                 }
                 // ('".$_POST["ID_film"]."','".$_POST["Titre"]."','".$_POST["Annee"]."','".$_POST["Nom_Realisateur"]."','".$_FILES['image']['name']."')
@@ -27,10 +27,10 @@
 
                 <form action="" method="post" enctype="multipart/form-data">
                 <h1>Ajouter un film</h1><hr>  
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label for="title">Id du film</label>
                         <input type="text" class="form-control" name="ID_film" />
-                    </div>
+                    </div> -->
                     
                     <div class="form-group">
                         <label for="title">Titre</label>
