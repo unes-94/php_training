@@ -19,11 +19,11 @@
             // on teste si nos variables sont définies
         if($username && $password){
             // on vérifie les informations du formulaire
-        if($username=="casa" && $password=="123" ){
+        if($username=="admin" && $password=="1234" ){
            // On démarre la session
             session_start();
             // on redirige notre visiteur vers une page de notre section membre
-            header("Location: Bonjour.php");
+            header("Location: Add_film.php");
             exit();
         
         } else  {

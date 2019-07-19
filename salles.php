@@ -5,7 +5,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-8">
-                <a href="Bonjour">retour</a>
+            <a href="Bonjour.php" class="btn btn-secondary btn-sm"> <- Retour </a>
                 <form action="" method="post">
                 <label for="salle">Salles disponible</label>
                 <select class="mdb-select mb-4" name="inf">

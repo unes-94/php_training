@@ -6,6 +6,8 @@
     <div class="col-md-4 ml-5">
 
         <form action="" method="post" enctype="multipart/form-data">
+        <a href="Bonjour.php" class="btn btn-secondary btn-sm"> Acceuil </a>
+        <a href="logout.php" class="btn btn-secondary btn-sm">Déconnection</a>
             <h1>Ajouter un film</h1>
             <hr>
             <!-- <div class="form-group">

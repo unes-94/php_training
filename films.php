@@ -3,6 +3,7 @@
 
 <body>
   <div class="col-md-4">
+  <a href="Bonjour.php" class="btn btn-secondary btn-sm"> <- Retour </a>
   <h1>La liste des films</h1>
   <form action="" method="post" enctype="multipart/form-data">
 

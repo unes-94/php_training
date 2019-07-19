@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-8">
             <form action="search.php" method="POST">
-            <a href="Bonjour.php">retour</a>
+            <a href="Bonjour.php" class="btn btn-secondary btn-sm"> <- Retour </a>
                 <h5 class="card-header">Liste des film disponibles</h5>
                 <div class="card-body">
                     <div class="input-group">

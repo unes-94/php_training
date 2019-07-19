@@ -7,18 +7,22 @@
     <div class="card-body">
         <div class="row">
             <div class="col-md-6 ml-5">
-                <h1>bonjour !!</h1>
+                <h1>Acceuil !!</h1>
                 <hr>
-                <a href="logout.php">Déconnection</a>
                 <h3 class="card-header mb-4">cliquer pour afficher</h3>
-                <a href="artiste.php"><input class="btn btn-primary " value="Artistes"></a>
-                <a href="cinema.php"><input class="btn btn-primary " value="Cinema"></a>
-                <a href="films.php"><input class="btn btn-primary " value="Films"></a>
+                <a href="artiste.php" class="btn btn-primary ">Artistes ></a>
+                <a href="cinema.php" class="btn btn-primary ">Cinema ></a>
+                <a href="films.php" class="btn btn-primary ">Films ></a>
             </div>
             <div class="card-body">
                 <div class="col-md-8">
-                    <h3 class="card-header mb-4">Rechercher </h3>
-                    <a href="search.php"><input class="btn btn-outline-primary " value="Programmes par film"></a>
+                    <h3 class="card-header mb-4">Recherche </h3>
+                    <a href="search.php" class="btn btn-outline-primary ">  Programmes par film</a>
+                    <hr>
+                    <form action="login.php" method="post">
+                    <h3 class="card-header mb-4">Ajouter un film </h3>
+                    <input class="btn btn-outline-primary " value="Ajouter" type="submit" name="admin">
+                    </form>
                 </div>
             </div>
         </div>
