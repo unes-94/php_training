@@ -1,5 +1,5 @@
-<?php include "head.php"; ?>
-<?php include "conexion.php"; ?>
+<?php include "includes/head.php"; ?>
+<?php include "includes/conexion.php"; ?>
 
 <div class="container mt-5">
     <div class="row">
@@ -38,7 +38,6 @@
                         <th scope="col"> Num seance</th>
                         <th scope="col">Heure debut</th>
                         <th scope="col">Heure fin</th>
-                        <!-- <th scope="col">Nom du film</th> -->
                     </tr>
                 </thead>
                 <tbody>

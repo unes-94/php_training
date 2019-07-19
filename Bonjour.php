@@ -1,5 +1,8 @@
-<?php include "head.php"; ?>
-<?php session_start(); ?>
+<?php include "includes/head.php"; ?>
+<?php session_start();  // On démarre la session 
+?>
+
+
 <body>
     <div class="card-body">
         <div class="row">
@@ -8,18 +11,20 @@
                 <hr>
                 <a href="logout.php">Déconnection</a>
                 <h3 class="card-header mb-4">cliquer pour afficher</h3>
-                <a href="artiste.php"><input  class="btn btn-primary "  value="Artistes"></a>
-                <a href="cinema.php"><input  class="btn btn-primary " value="Cinema"></a>
-                <a href="films.php"><input  class="btn btn-primary " value="Films"></a>
+                <a href="artiste.php"><input class="btn btn-primary " value="Artistes"></a>
+                <a href="cinema.php"><input class="btn btn-primary " value="Cinema"></a>
+                <a href="films.php"><input class="btn btn-primary " value="Films"></a>
             </div>
             <div class="card-body">
-            <div class="col-md-8">
-                <h3 class="card-header mb-4">Rechercher </h3>
-                <a href="search.php"><input  class="btn btn-outline-primary " value="Programmes par film"></a>
-            </div>
+                <div class="col-md-8">
+                    <h3 class="card-header mb-4">Rechercher </h3>
+                    <a href="search.php"><input class="btn btn-outline-primary " value="Programmes par film"></a>
+                </div>
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>

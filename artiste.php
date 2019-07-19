@@ -1,5 +1,5 @@
-<?php include "head.php"; ?>
-<?php include "conexion.php"; ?>
+<?php include "includes/head.php"; ?>
+<?php include "includes/conexion.php"; ?>
 
 <body>
     <div class="col-md-4">

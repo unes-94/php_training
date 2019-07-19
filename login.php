@@ -1,35 +1,40 @@
-<?php include "head.php"; ?>
+<?php include "includes/head.php"; ?>
 
 <?php if (isset($_POST['submit']))
     {
         $username=$_POST['user'];
         $password=$_POST['pass'];
-        $length=3;
         $msg="";
 
-        if (!empty($password) || !empty($username)) 
+        if (!empty($password) && !empty($username)) 
         {
+            // on enregistre les paramètres de notre visiteur
         $username=$_POST['user'];
         $password=$_POST['pass'];
         } else {
         $username = false;
         $password = false;
-        $msg .="should not be empty";
+        $msg .="Veuillez remplir les champs obligatoire";
         }
+            // on teste si nos variables sont définies
         if($username && $password){
-        if(strlen($username)<$length || strlen($password)<$length ){
-        $msg .="saisissez plus de 3 chiffre";
-        } else  {
+            // on vérifie les informations du formulaire
+        if($username=="casa" && $password=="123" ){
+           // On démarre la session
             session_start();
-        header("Location: Bonjour.php");
-        exit();
+            // on redirige notre visiteur vers une page de notre section membre
+            header("Location: Bonjour.php");
+            exit();
+        
+        } else  {
+            $msg .="login et password incorrect";
         }
     }
 } ?>
 
 <body>
 
-<div class="card-body">
+<div class="container">
     <div class="row">
         <div class="col-lg-4">
              <h1 class="mb-4">Login in!</h1>
@@ -40,7 +45,7 @@
                     <div class="form-group">
                     <input name="pass" type="password" class="form-control form-control-user" placeholder="Password">
                     </div>
-                    <input name="submit"class="btn btn-primary" type="submit" value="Login">
+                    <input name="submit"class="btn btn-success" type="submit" value="Login">
                     <p><?php if(isset($msg)) echo $msg; ?></p>
                 </form>
         </div>
