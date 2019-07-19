@@ -20,7 +20,9 @@
         if(strlen($username)<$length || strlen($password)<$length ){
         $msg .="saisissez plus de 3 chiffre";
         } else  {
+            session_start();
         header("Location: Bonjour.php");
+        exit();
         }
     }
 } ?>
