@@ -10,10 +10,10 @@
         <a href="logout.php" class="btn btn-secondary btn-sm">Déconnection</a>
             <h1>Ajouter un film</h1>
             <hr>
-            <!-- <div class="form-group">
+            <div class="form-group">
                         <label for="title">Id du film</label>
                         <input type="text" class="form-control" name="ID_film" />
-                    </div> -->
+                    </div>
 
             <div class="form-group">
                 <label for="title">Titre</label>
