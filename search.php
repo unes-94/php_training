@@ -1,9 +1,6 @@
 <?php include "includes/head.php"; ?>
 <?php include "includes/conexion.php"; ?>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-lg-8">
             <form action="search.php" method="POST">
             <a href="Bonjour.php" class="btn btn-secondary btn-sm"> <- Retour </a>
                 <h5 class="card-header">Liste des film disponibles</h5>
@@ -62,11 +59,11 @@
                                 $fin = $row['Heure_fin'];
                                 
                             echo "</tr>";
-                            echo "<th scope='col'>$cinema</th>";
-                            echo "<th scope='col'>$salle</th>";
-                            echo "<th scope='col'>$seance</th>";
-                            echo "<th scope='col'>$debut</th>";
-                            echo "<th scope='col'>$fin</th>";
+                            echo "<td>$cinema</td>";
+                            echo "<td>$salle</td>";
+                            echo "<td>$seance</td>";
+                            echo "<td>$debut</td>";
+                            echo "<td>$fin</td>";
                             echo "</tr>";
                             }
                         }

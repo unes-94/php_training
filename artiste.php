@@ -1,8 +1,7 @@
 <?php include "includes/head.php"; ?>
 <?php include "includes/conexion.php"; ?>
 
-<body>
-    <div class="col-md-4">
+
     <a href="Bonjour.php" class="btn btn-secondary btn-sm"> <- Retour </a>
         <h1>Les aristes</h1>
             <table class="table">
@@ -38,6 +37,4 @@
                 </tbody>
             </table>
     </div>
-</body>
-
-</html>
+</div>

@@ -22,9 +22,10 @@
         if($username=="admin" && $password=="1234" ){
            // On démarre la session
             session_start();
+            $_SESSION['login'] = $username;
+		    $_SESSION['pwd'] = $password;
             // on redirige notre visiteur vers une page de notre section membre
-            header("Location: Add_film.php");
-            exit();
+            header("Location: films.php");
         
         } else  {
             $msg .="login et password incorrect";
@@ -33,10 +34,6 @@
 } ?>
 
 <body>
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4">
              <h1 class="mb-4">Login in!</h1>
                 <form class="user" method="POST" action="">
                     <div class="form-group">
@@ -51,6 +48,3 @@
         </div>
     </div>
 </div>
-
-</body>
-</html>
